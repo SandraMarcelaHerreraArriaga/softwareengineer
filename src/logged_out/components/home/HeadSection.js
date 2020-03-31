@@ -12,7 +12,7 @@ import {
   withWidth,
   isWidthUp
 } from "@material-ui/core";
-import headerImage from "../../dummy_data/images/headerImage.jpg";
+import headerImage from "../../dummy_data/images/SandraHerrera.png";
 import WaveBorder from "../../../shared/components/WaveBorder";
 
 const styles = theme => ({
@@ -123,8 +123,7 @@ function HeadSection(props) {
                         <Typography
                           variant={isWidthUp("lg", width) ? "h3" : "h4"}
                         >
-                          Free Template for building an SaaS app using
-                          Material-UI
+                          Welcome to my personal site. Feel free to comment about it
                         </Typography>
                       </Box>
                       <div>
@@ -133,8 +132,7 @@ function HeadSection(props) {
                             variant={isWidthUp("lg", width) ? "h6" : "body1"}
                             color="textSecondary"
                           >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt
+                            You can visit some of my experience as Software Engineer
                           </Typography>
                         </Box>
                         <Button
@@ -143,9 +141,9 @@ function HeadSection(props) {
                           fullWidth
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/dunky11/react-saas-template"
+                          href="https://robotistas.mx/"
                         >
-                          Download from GitHub
+                          My last project
                         </Button>
                       </div>
                     </Box>

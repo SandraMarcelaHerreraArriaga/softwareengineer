@@ -31,7 +31,7 @@ const styles = theme => ({
     fontWeight: theme.typography.h6.fontWeight
   },
   brandText: {
-    fontFamily: "'Baloo Bhaijaan', cursive",
+    fontFamily: "'Baloo Bhaijaan'",
     fontWeight: 400
   },
   noDecoration: {
@@ -50,11 +50,12 @@ function NavBar(props) {
     selectedTab
   } = props;
   const menuItems = [
-    {
+    /*{
       link: "/",
       name: "Home",
       icon: <HomeIcon className="text-white" />
-    },
+    }
+    
     {
       link: "/blog",
       name: "Blog",
@@ -70,6 +71,7 @@ function NavBar(props) {
       onClick: openLoginDialog,
       icon: <LockOpenIcon className="text-white" />
     }
+    */
   ];
   return (
     <div className={classes.root}>
@@ -82,15 +84,15 @@ function NavBar(props) {
               display="inline"
               color="primary"
             >
-              Wa
+              Sandra 
             </Typography>
             <Typography
               variant="h4"
               className={classes.brandText}
               display="inline"
-              color="secondary"
+              color="primary"
             >
-              Ver
+               Herrera
             </Typography>
           </div>
           <div>

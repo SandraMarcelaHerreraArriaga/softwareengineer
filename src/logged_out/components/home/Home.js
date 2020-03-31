@@ -2,7 +2,6 @@ import React, { Fragment, PureComponent } from "react";
 import PropTypes from "prop-types";
 import HeadSection from "./HeadSection";
 import FeatureSection from "./FeatureSection";
-import PricingSection from "./PricingSection";
 
 class Home extends PureComponent {
   componentDidMount() {
@@ -15,7 +14,6 @@ class Home extends PureComponent {
       <Fragment>
         <HeadSection />
         <FeatureSection />
-        <PricingSection />
       </Fragment>
     );
   }

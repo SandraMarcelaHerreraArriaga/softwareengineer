@@ -78,11 +78,11 @@ const styles = theme => ({
 const infos = [
   {
     icon: <PhoneIcon />,
-    description: "+1 555 123456"
+    description: "+52 4443184174"
   },
   {
     icon: <MailIcon />,
-    description: "support@company.com"
+    description: "sandra.h.arriaga@gmail.com"
   }
 ];
 
@@ -101,7 +101,7 @@ const socialIcons = [
       </svg>
     ),
     label: "Github",
-    href: "https://github.com/dunky11/react-saas-template"
+    href: "https://github.com/SandraMarcelaHerreraArriaga"
   },
   {
     icon: (
@@ -133,7 +133,7 @@ const socialIcons = [
       </svg>
     ),
     label: "LinkedIn",
-    href: "https://www.linkedin.com/"
+    href: "https://www.linkedin.com/in/sandra-herrera-herrera-arriaga/"
   },
   {
     icon: (
@@ -149,7 +149,7 @@ const socialIcons = [
       </svg>
     ),
     label: "Twitter",
-    href: "https://www.twitter.com/"
+    href: "https://twitter.com/sandraharriaga1"
   }
 ];
 
@@ -165,31 +165,7 @@ function Footer(props) {
       <div className={classes.footerInner}>
         <Grid container spacing={isWidthUp("md", width) ? 10 : 5}>
           <Grid item xs={12} md={6} lg={4}>
-            <form>
-              <Box display="flex" flexDirection="column">
-                <Box mb={1}>
-                  <TextField
-                    variant="outlined"
-                    multiline
-                    placeholder="Get in touch with us"
-                    inputProps={{ "aria-label": "Get in Touch" }}
-                    InputProps={{
-                      className: classes.whiteBg
-                    }}
-                    rows={4}
-                    fullWidth
-                    required
-                  />
-                </Box>
-                <ColoredButton
-                  color={theme.palette.common.white}
-                  variant="outlined"
-                  type="submit"
-                >
-                  Send Message
-                </ColoredButton>
-              </Box>
-            </form>
+            
           </Grid>
           <Hidden mdDown>
             <Grid item xs={12} md={6} lg={4}>
@@ -223,7 +199,7 @@ function Footer(props) {
           </Hidden>
           <Grid item xs={12} md={6} lg={4}>
             <Typography variant="h6" paragraph className="text-white">
-              About the Company
+              About me
             </Typography>
             <Typography style={{ color: "#8f9296" }} paragraph>
               Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce

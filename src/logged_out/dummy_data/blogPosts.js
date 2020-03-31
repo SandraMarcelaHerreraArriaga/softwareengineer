@@ -1,11 +1,7 @@
 import React, { Fragment } from "react";
 import { Typography } from "@material-ui/core";
 import blogPost1 from "./images/blogPost1.jpg";
-import blogPost2 from "./images/blogPost2.jpg";
-import blogPost3 from "./images/blogPost3.jpg";
-import blogPost4 from "./images/blogPost4.jpg";
-import blogPost5 from "./images/blogPost5.jpg";
-import blogPost6 from "./images/blogPost6.jpg";
+
 
 const content = (
   <Fragment>
@@ -100,7 +96,7 @@ export default [
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     content: content
   },
-  {
+ /* {
     title: "Post 2",
     id: 2,
     date: 1576391600,
@@ -144,5 +140,5 @@ export default [
     snippet:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
     content: content
-  }
+  }*/
 ];
