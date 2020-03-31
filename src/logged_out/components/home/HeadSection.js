@@ -123,7 +123,7 @@ function HeadSection(props) {
                         <Typography
                           variant={isWidthUp("lg", width) ? "h3" : "h4"}
                         >
-                          Welcome to my personal site. Feel free to comment about it
+                          Welcome to my personal site.
                         </Typography>
                       </Box>
                       <div>
