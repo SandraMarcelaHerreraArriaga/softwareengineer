@@ -45,8 +45,8 @@ class Main extends PureComponent {
 
   selectBlog = () => {
     smoothScrollTop();
-    document.title = "WaVer - Blog";
-    this.setState({ selectedTab: "Blog" });
+    document.title = "Sandra Herrera - Portafolio";
+    this.setState({ selectedTab: "Portafolio" });
   };
 
   openLoginDialog = () => {

@@ -32,7 +32,7 @@ const styles = theme => ({
   },
   brandText: {
     fontFamily: "'Baloo Bhaijaan'",
-    fontWeight: 400
+    fontWeight: 400,
   },
   noDecoration: {
     textDecoration: "none !important"
@@ -50,18 +50,17 @@ function NavBar(props) {
     selectedTab
   } = props;
   const menuItems = [
-    /*{
+    {
       link: "/",
       name: "Home",
       icon: <HomeIcon className="text-white" />
-    }
-    
-    {
-      link: "/blog",
-      name: "Blog",
-      icon: <BookIcon className="text-white" />
     },
     {
+      link: "/blog",
+      name: "Portafolio",
+      icon: <BookIcon className="text-white" />
+    }
+    /*{
       name: "Register",
       onClick: openRegisterDialog,
       icon: <HowToRegIcon className="text-white" />
@@ -116,7 +115,7 @@ function NavBar(props) {
                       onClick={handleMobileDrawerClose}
                     >
                       <Button
-                        color="secondary"
+                        color="primary"
                         size="large"
                         classes={{ text: classes.menuButtonText }}
                       >
@@ -127,7 +126,7 @@ function NavBar(props) {
                 }
                 return (
                   <Button
-                    color="secondary"
+                    color="primary"
                     size="large"
                     onClick={element.onClick}
                     classes={{ text: classes.menuButtonText }}

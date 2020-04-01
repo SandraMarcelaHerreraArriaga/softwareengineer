@@ -187,8 +187,9 @@ function Footer(props) {
             </Typography>
             <Typography style={{ color: "#8f9296" }} paragraph>
               Sandra Marcela Herrera arriaga
-              Software Engineer Located in Mexico
             </Typography>
+            <Typography  style={{ color: "#8f9296" }} paragraph>
+            Software Engineer Located in Mexico            </Typography>
             <Box display="flex">
               {socialIcons.map((socialIcon, index) => (
                 <Box key={index} mr={index !== socialIcons.length - 1 ? 1 : 0}>

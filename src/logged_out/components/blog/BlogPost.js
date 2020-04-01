@@ -65,13 +65,13 @@ class BlogPost extends PureComponent {
                   {content}
                   <Box pt={2}>
                     <Grid spacing={1} container>
-                      {["Facebook", "Twitter", "Reddit", "Tumblr"].map(
+                      {["Facebook", "Twitter"].map(
                         (type, index) => (
                           <Grid item key={index}>
                             <ShareButton
                               type={type}
-                              title="React SaaS Template"
-                              description="I found an awesome template for an webapp using React!"
+                              title="Sandra Herrera Software Engineer"
+                              description="My experience"
                               disableElevation
                               variant="contained"
                               className="text-white"
