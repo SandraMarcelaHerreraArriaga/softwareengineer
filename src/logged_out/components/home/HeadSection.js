@@ -112,20 +112,22 @@ function HeadSection(props) {
             >
               <div className={classNames(classes.containerFix, "container")}>
                 <Box justifyContent="space-between" className="row">
-                  <Grid item xs={12} md={5}>
+                  <Grid item xs={12} md={12}>
                     <Box
                       display="flex"
                       flexDirection="column"
                       justifyContent="space-between"
                       height="100%"
                     >
-                      <Box mb={4}>
-                        <Typography
-                          variant={isWidthUp("lg", width) ? "h3" : "h4"}
-                        >
-                          Welcome to my personal site.
-                        </Typography>
-                      </Box>
+                      <Hidden smDown>
+                    <Grid item md={12}>
+                      <img
+                        src={headerImage}
+                        className={classes.image}
+                        alt="header example"
+                      />
+                    </Grid>
+                  </Hidden>
                       <div>
                         <Box mb={2}>
                           <Typography
@@ -148,15 +150,7 @@ function HeadSection(props) {
                       </div>
                     </Box>
                   </Grid>
-                  <Hidden smDown>
-                    <Grid item md={6}>
-                      <img
-                        src={headerImage}
-                        className={classes.image}
-                        alt="header example"
-                      />
-                    </Grid>
-                  </Hidden>
+                  
                 </Box>
               </div>
             </Card>

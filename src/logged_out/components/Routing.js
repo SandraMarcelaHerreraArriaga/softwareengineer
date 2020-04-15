@@ -26,7 +26,7 @@ function Routing(props) {
       ))}
       <PropsRoute
         exact
-        path="/blog"
+        path="/portafolio"
         component={Blog}
         selectBlog={selectBlog}
         blogPosts={blogPosts}

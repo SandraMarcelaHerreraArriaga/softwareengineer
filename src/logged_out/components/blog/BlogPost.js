@@ -34,7 +34,7 @@ const styles = theme => ({
 class BlogPost extends PureComponent {
   componentDidMount() {
     const { title } = this.props;
-    document.title = `WaVer - ${title}`;
+    document.title = `Sandra Herrera - ${title}`;
     smoothScrollTop();
   }
 
@@ -89,7 +89,7 @@ class BlogPost extends PureComponent {
             </Grid>
             <Grid item md={3}>
               <Typography variant="h6" paragraph>
-                Other arcticles
+                More Experience
               </Typography>
               {otherArticles.map(blogPost => (
                 <Box key={blogPost.id} mb={3}>

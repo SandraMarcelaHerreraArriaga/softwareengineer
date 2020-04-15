@@ -98,7 +98,7 @@ class Main extends PureComponent {
       title = title.replace(/\s{2,}/g, " ");
       /* Replace space with a '-' symbol */
       title = title.replace(/\s/g, "-");
-      blogPost.url = `/blog/post/${title}`;
+      blogPost.url = `/portafolio/experience/${title}`;
       blogPost.params = `?id=${blogPost.id}`;
       return blogPost;
     });
@@ -126,23 +126,8 @@ class Main extends PureComponent {
     } = this.state;
     return (
       <div className={classes.wrapper}>
-        {!cookieRulesDialogOpen && (
-          <CookieConsent
-            handleCookieRulesDialogOpen={this.handleCookieRulesDialogOpen}
-          />
-        )}
-        <DialogSelector
-          openLoginDialog={this.openLoginDialog}
-          dialogOpen={dialogOpen}
-          onClose={this.closeDialog}
-          openTermsDialog={this.openTermsDialog}
-          openRegisterDialog={this.openRegisterDialog}
-          openChangePasswordDialog={this.openChangePasswordDialog}
-        />
-        <CookieRulesDialog
-          open={cookieRulesDialogOpen}
-          onClose={this.handleCookieRulesDialogClose}
-        />
+
+        
         <NavBar
           selectedTab={selectedTab}
           selectTab={this.selectTab}
