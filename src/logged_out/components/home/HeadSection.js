@@ -13,57 +13,11 @@ import {
   isWidthUp
 } from "@material-ui/core";
 import headerImage from "../../dummy_data/images/SandraHerrera.png";
+import SandraIcon from "../../dummy_data/images/SandraHerreraIcon.png";
 import WaveBorder from "../../../shared/components/WaveBorder";
 
 const styles = theme => ({
-  extraLargeButtonLabel: {
-    fontSize: theme.typography.body1.fontSize,
-    [theme.breakpoints.up("sm")]: {
-      fontSize: theme.typography.h6.fontSize
-    }
-  },
-  extraLargeButton: {
-    paddingTop: theme.spacing(1.5),
-    paddingBottom: theme.spacing(1.5),
-    [theme.breakpoints.up("xs")]: {
-      paddingTop: theme.spacing(1),
-      paddingBottom: theme.spacing(1)
-    },
-    [theme.breakpoints.up("lg")]: {
-      paddingTop: theme.spacing(2),
-      paddingBottom: theme.spacing(2)
-    }
-  },
-  card: {
-    boxShadow: theme.shadows[4],
-    marginLeft: theme.spacing(2),
-    marginRight: theme.spacing(2),
-    [theme.breakpoints.up("xs")]: {
-      paddingTop: theme.spacing(3),
-      paddingBottom: theme.spacing(3)
-    },
-    [theme.breakpoints.up("sm")]: {
-      paddingTop: theme.spacing(5),
-      paddingBottom: theme.spacing(5),
-      paddingLeft: theme.spacing(4),
-      paddingRight: theme.spacing(4)
-    },
-    [theme.breakpoints.up("md")]: {
-      paddingTop: theme.spacing(5.5),
-      paddingBottom: theme.spacing(5.5),
-      paddingLeft: theme.spacing(5),
-      paddingRight: theme.spacing(5)
-    },
-    [theme.breakpoints.up("lg")]: {
-      paddingTop: theme.spacing(6),
-      paddingBottom: theme.spacing(6),
-      paddingLeft: theme.spacing(6),
-      paddingRight: theme.spacing(6)
-    },
-    [theme.breakpoints.down("lg")]: {
-      width: "auto"
-    }
-  },
+
   wrapper: {
     position: "relative",
     backgroundColor: theme.palette.secondary.main,
@@ -73,16 +27,17 @@ const styles = theme => ({
     maxWidth: "100%",
     verticalAlign: "middle",
     borderRadius: theme.shape.borderRadius,
-    boxShadow: theme.shadows[4]
+    boxShadow: theme.shadows[2],
+
   },
   container: {
-    marginTop: theme.spacing(6),
+    marginTop: theme.spacing(1),
     marginBottom: theme.spacing(12),
     [theme.breakpoints.down("md")]: {
-      marginBottom: theme.spacing(9)
+      marginBottom: theme.spacing(4)
     },
     [theme.breakpoints.down("sm")]: {
-      marginBottom: theme.spacing(6)
+      marginBottom: theme.spacing(4)
     },
     [theme.breakpoints.down("sm")]: {
       marginBottom: theme.spacing(3)
@@ -94,7 +49,7 @@ const styles = theme => ({
     }
   },
   waveBorder: {
-    paddingTop: theme.spacing(4)
+    paddingTop: theme.spacing(1),
   }
 });
 
@@ -103,57 +58,33 @@ function HeadSection(props) {
   return (
     <Fragment>
       <div className={classNames("lg-p-top", classes.wrapper)}>
-        <div className={classNames("container-fluid", classes.container)}>
+        <div>
           <Box display="flex" justifyContent="center" className="row">
-            <Card
-              className={classes.card}
-              data-aos-delay="200"
-              data-aos="zoom-in"
-            >
-              <div className={classNames(classes.containerFix, "container")}>
-                <Box justifyContent="space-between" className="row">
-                  <Grid item xs={12} md={12}>
-                    <Box
-                      display="flex"
-                      flexDirection="column"
-                      justifyContent="space-between"
-                      height="100%"
-                    >
-                      <Hidden smDown>
+
+            <div className={classNames(classes.containerFix, "container")}>
+              <Box justifyContent="space-around" className="row">
+                <Box
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="center"
+                  alignItems="center"
+                  height="100%"
+                >
+                  <Hidden smDown>
                     <Grid item md={12}>
                       <img
-                        src={headerImage}
+                        src={SandraIcon}
                         className={classes.image}
-                        alt="header example"
+                        alt="Sandra Herrera"
+                        style={{ borderRadius: theme.spacing(15), backgroundColor: null }}
                       />
+                      <Typography variant="h4" align="center">Software Engineer</Typography>
+
                     </Grid>
                   </Hidden>
-                      <div>
-                        <Box mb={2}>
-                          <Typography
-                            variant={isWidthUp("lg", width) ? "h6" : "body1"}
-                            color="textSecondary"
-                          >
-                            You can visit some of my experience as Software Engineer
-                          </Typography>
-                        </Box>
-                        <Button
-                          variant="contained"
-                          color="secondary"
-                          fullWidth
-                          className={classes.extraLargeButton}
-                          classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://robotistas.mx/"
-                        >
-                          My last project
-                        </Button>
-                      </div>
-                    </Box>
-                  </Grid>
-                  
                 </Box>
-              </div>
-            </Card>
+              </Box>
+            </div>
           </Box>
         </div>
       </div>

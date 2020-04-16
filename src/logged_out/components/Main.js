@@ -5,10 +5,7 @@ import { withStyles } from "@material-ui/core";
 import NavBar from "./navigation/NavBar";
 import Footer from "./footer/Footer";
 import "aos/dist/aos.css";
-import CookieRulesDialog from "./cookies/CookieRulesDialog";
-import CookieConsent from "./cookies/CookieConsent";
 import dummyBlogPosts from "../dummy_data/blogPosts";
-import DialogSelector from "./register_login/DialogSelector";
 import Routing from "./Routing";
 import smoothScrollTop from "../../shared/functions/smoothScrollTop";
 
@@ -120,13 +117,10 @@ class Main extends PureComponent {
     const {
       selectedTab,
       mobileDrawerOpen,
-      blogPosts,
-      dialogOpen,
-      cookieRulesDialogOpen
+      blogPosts
     } = this.state;
     return (
       <div className={classes.wrapper}>
-
         
         <NavBar
           selectedTab={selectedTab}
